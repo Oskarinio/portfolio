@@ -4,12 +4,23 @@
     <title>Portfolio</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300italic,500,700" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+      <link data-turbolinks-track="true" href="/assets/application-f7aa79b389eed3447dbd88f8dcc0b59e.css" media="all" rel="stylesheet">
+      <script data-turbolinks-track="true" src="/assets/application-4fba09a36c46587a0f07211966615115.js"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <%= yield %>
+    <div class="footer">
+      <div class="container">
+        <ul class="social_media">
+          <li><a class="github" href="#">github</a></li>
+          <li><a class="linkedin" href="#">linkedin</a></li>
+        </ul>
+        <p>© 2019 Oskar Zieliński</p>
+      </div>
+    </div>
   </body>
 </html>
